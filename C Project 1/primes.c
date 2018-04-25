@@ -13,7 +13,7 @@ void clearAll(){
 	int N = sizeof(prime) / sizeof(prime[0]);; //int N equals the prime array size
 
 	for(int i=0; i < N; i++) {
-	prime[N] = 0;
+	prime[i] = 0;
 	}
 }
 //The setBit(A, n) function will set (only) the bit in the A[ ] array that corresponds to the number n

@@ -17,8 +17,7 @@
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Start:
 
-
-*Find the min for array A
+*Find the min for array A 
 	move.l A, min *min = A[0] 
 	move.l #1, i *move i = 1
 
@@ -48,8 +47,7 @@ Start:
 
 Q1:
 *Find the min for array B
-	move.l B, min *min = b[0]
-	move.l #1, i *move i = 1
+	move.l #0, i *move i = 0
 
  WhileStart3:
 	move.l i, d1 * d1 = i
@@ -106,9 +104,8 @@ Q2:
  End2:
 
 Q3:
-*Find the max for Array B
-	move.l B, max *max = b[0]
-	move.l #1, i *move i = 0
+*Find the max for Array A + B
+	move.l #0, i *move i = 0
 
  WhileStart:
 	move.l i, d1 * d1 = i
@@ -162,8 +159,7 @@ Q4:
  LoopExit:
 
 Q5:
-*Find the sum of array B
-	move.l #0, sum
+*Find the sum of array A + B
 	move.l #0, i
 	
  Loop2:
